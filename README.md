@@ -82,6 +82,18 @@ As the operator of this server you are the **data controller** for your organisa
 
 ---
 
+## Security
+
+Collab-it Server installers are currently **not code-signed** with a certificate authority. Windows SmartScreen may display a blue "Windows protected your PC" warning on first install.
+
+**This is expected.** To proceed:
+1. Click **More info** in the SmartScreen dialog.
+2. Click **Run anyway**.
+
+Every installer published here is automatically scanned on VirusTotal immediately after it is built. The scan report for each release is linked in the release notes on this page. You can also verify any installer yourself by dropping the `.exe` file onto [virustotal.com](https://www.virustotal.com).
+
+---
+
 ## Upgrading
 
 Run the new installer over an existing installation. Your project database (`pb_data`) is preserved automatically — no manual migration needed.
